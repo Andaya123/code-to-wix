@@ -178,3 +178,24 @@ button:hover {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.input-error {
+  border-color: var(--error-red);
+  box-shadow: 0 0 8px var(--error-red);
+  animation: shake 0.2s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+
+.planet-age-label {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+.planet-age-label span {
+  color: var(--highlight-yellow);
+}
